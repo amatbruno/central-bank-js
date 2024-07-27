@@ -1,0 +1,100 @@
+:root {
+    color-scheme: light dark;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+  
+  #title {
+    font-size: 200px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    line-height: 180px;
+    margin: auto;
+    width: 83%;
+  }
+  
+  #bank-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+  }
+  
+  .container-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 10px;
+  }
+  
+  .container-titles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas-cont {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  #canvas3d {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    margin-right: 50px;
+  }
+
+  .intro {
+    margin-bottom: 10px;
+  }
+  .intro h2 {
+    font-size: 22px;
+    font-weight: 100;
+    text-align: start;
+  }
+
+.info-box {
+    border-top: 1px solid rgba(211, 211, 211, 0.59);
+    width: 370px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.info-box h2 {
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+#part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 100vh;
+}
