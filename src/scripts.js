@@ -1,9 +1,11 @@
 import { Application } from "https://cdn.skypack.dev/@splinetool/runtime@latest";
 
+const modelUrl = "https://prod.spline.design/UQuA5ebtQrgFaFTQ/scene.splinecode";
+
 const canvas = document.getElementById('canvas3d');
 const app = new Application(canvas);
 app.
-    load('https://prod.spline.design/UQuA5ebtQrgFaFTQ/scene.splinecode')
+    load(modelUrl)
     .then(() => {
         const card = app.findObjectByName("Card");
 
@@ -31,6 +33,6 @@ app.
             }
         })
             .to(card.rotation, { x: -Math.PI / 14, z: Math.PI / 36 }, 0)
-            .to(card.position, { x:200, y: 170 }, 0)
+            .to(card.position, { x: 200, y: 170 }, 0)
             .to(card.scale, { x: 1, y: 1, z: 1 }, 0);
     })
