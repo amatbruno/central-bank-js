@@ -18,6 +18,19 @@ app.
             }
         })
             .to(card.rotation, { x: -Math.PI / 14, z: Math.PI / 36 }, 0)
-            .to(card.position, { x: -80, y: 100 }, 0)
-            .to(card.scale, { x: 1.1, y: 1.1, z: 1.1 }, 0);
+            .to(card.position, { x: -60, y: 100 }, 0)
+            .to(card.scale, { x: 1.6, y: 1.6, z: 0.7 }, 0);
+
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: "#part2",
+                start: "top center",
+                end: "bottom bottom",
+                scrub: true
+            }
+        })
+            .to(card.rotation, { x: -Math.PI / 14, z: Math.PI / 36 }, 0)
+            .to(card.position, { x:200, y: 170 }, 0)
+            .to(card.scale, { x: 1, y: 1, z: 1 }, 0);
     })
